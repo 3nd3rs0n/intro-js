@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+    <div class="padre">
+        <div class="datos">
+            <div class="imagen">
+                <img src="./assets/img/perro1.jpg" alt="perro1">
+                <p>
+                    calculadora de perros
+                </p>
+        
+            </div>
+
+            <div class="inputs">  
+                <input type="number" id="cantidad" placeholder="Cantidad">
+
+                <select id="colores">
+                    <option value="red">rojo</option>
+                    <option value="blue">azul</option>
+                    <option value="yellow">amarillo</option>
+                    <option value="black">negro</option>
+                </select>
+
+                <input type="number" id="precio" placeholder="precio">
+                <button type="button" onclick="calcular();">Calcular Total</button>
+            </div>
+        </div>
+        
+        <div class="resultado">
+            <p> Total: <span id="Total"></span></p>
+            <p> Cantidad: <span id="Cantidad"></span></p>
+            <div class="punto-de-color">
+                <p> Color:</p>
+                <div id="circulo"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    
+    <script>
+    function calcular(){
+            var cantidad = parseInt(document.getElementById('cantidad').value);
+            var precio = parseInt(document.getElementById('precio').value);
+            var color = document.querySelector('#colores').value;
+
+
+            document.getElementById('Total').innerHTML = cantidad * precio;
+            document.getElementById('Cantidad').innerHTML = cantidad;
+            circulo = document.querySelector('#circulo');
+            circulo.style.backgroundColor = color;
+
+         }
+
+       
+    </script>
+
+</body>
+</html>

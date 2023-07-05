@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+    
+
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.datos{
+   
+    background-color: red;
+    border-radius: 5%;
+    height: 40rem;
+    width: 30rem;
+    
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20%;
+    gap: 1rem;
+}
+
+
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    gap: 1rem;
+    height: 10rem;
+    width: 30rem;
+}
+
+.punto-de-color{
+    display: flex;
+    gap: 1rem;
+}
+
+.punto-de-color div{
+    background-color: black;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+
+}
+
